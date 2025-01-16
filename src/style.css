@@ -12,7 +12,7 @@ header {
     background-color: seagreen;
     color: floralwhite;
     font-size: 1.2rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -22,10 +22,10 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 #left, #list {
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 /* left menu styling */
@@ -51,6 +51,29 @@ main {
 }
 #left div {
     margin-bottom: 0.5rem;
+}
+#projects p{
+    margin: 0.5rem 0;
+}
+
+/* to-do list styling */
+
+#list {
+    grid-column: 2 / span 3;
+}
+
+#list-title {
+    margin-bottom: 1rem;
+}
+
+.task {
+    width: 100%;
+    border-top: 1px solid grey;
+    padding: 0.5rem 0;
+}
+.task:last-of-type {
+    border-bottom: 1px solid grey;
+    color: gray;
 }
 
 
