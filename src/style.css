@@ -34,5 +34,23 @@ main {
     grid-column: 1;
 }
 
+#profile {
+    display: flex;
+}
+
+#pfp img {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+#left div {
+    margin-bottom: 0.5rem;
+}
 
 
