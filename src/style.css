@@ -22,32 +22,40 @@ header {
 /* main section styling */ 
 
 main {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
     display: flex;
     height: calc(100vh - 2rem);
-    padding: 0 2rem;
-}
-#left, #list {
-    /* padding: 0 2rem; */
+    padding: 0 2rem 2rem 2rem;
 }
 
-/* left menu styling */
+/* 
+* left menu styling 
+*/
 
 #left {
-    /* grid-column: 1;
-    height: 100vh; */
-    background-color: blanchedalmond;
     width: 25%;
     height: 100%;
     margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #00FF7F;
+    color: black;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 15px;
 }
 
+/* left sections */
 #profile {
     display: flex;
-    background-color: yellow;
+    align-items: center;
 }
-
+#projects {
+    width: 100%;
+    height: 80%;
+}
+#profile, #add-project {
+    width: 100%;
+    height: 10%;
+}
 #pfp img {
     border-radius: 50%;
     width: 2rem;
@@ -62,20 +70,45 @@ main {
 #left div {
     margin-bottom: 0.5rem;
 }
-#projects {
-    display: grid;
-    grid-template-rows: repeat(auto, clamp(20px, 1.1rem, 50px));
-    gap: 0;
-}
-#projects p{
-    background-color: aqua;
+.project{
+    display: flex;
+    align-items: center;
+    height: 2rem;
     margin: 0.5rem 0;
+}
+.project h3{
+    padding-left: 1rem;
+}
+.project:hover{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19); 
+}
+#add-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#add-project-input{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: #00FF7F;
+    font-size: 1.3rem;
+    text-align: center;
+    display: inline-block;
+}
+#add-project-input:hover{
+    background-color: seagreen;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19); 
 }
 
 /* to-do list styling */
 
 #list {
-    /* grid-column: 2 / span 3; */
     width: 75%;
 }
 
@@ -95,8 +128,12 @@ main {
 .task:last-of-type input, input:focus {
     border: none;
     outline: none;
+    width: 70%;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: transparent;
 }
-
 .title {
     display: flex;
 }
@@ -119,5 +156,7 @@ main {
 .due {
     margin-left: 2rem;
 }
-
+.description {
+    display: none;
+}
 

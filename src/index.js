@@ -1,10 +1,16 @@
 import ToDo from "./manageTasks";
-import { compareAsc, format } from "date-fns";
+import { showDetails } from "./manageTasks";
 
-format(new Date(2002, 8, 11), "MMM do, yyyy");
-console.log(new Date(2002, 8, 11));
+/* 
+* Things to do:
+Show description when hovering
+Be able to modify tasks
+add a task
+add a project
+modify projects
+select another project
+*/
 
-//prompt("Enter something: ");
+const list = document.querySelector("#list");
 
-//const task = prompt("Enter something: ");
-
+list.addEventListener("mouseover", showDetails);
