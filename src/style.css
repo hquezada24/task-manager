@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    overflow: hidden;
 }
 
 /* header styling */
@@ -21,21 +22,30 @@ header {
 /* main section styling */ 
 
 main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    height: calc(100vh - 2rem);
+    padding: 0 2rem;
 }
 #left, #list {
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 /* left menu styling */
 
 #left {
-    grid-column: 1;
+    /* grid-column: 1;
+    height: 100vh; */
+    background-color: blanchedalmond;
+    width: 25%;
+    height: 100%;
+    margin-right: 2rem;
 }
 
 #profile {
     display: flex;
+    background-color: yellow;
 }
 
 #pfp img {
@@ -52,14 +62,21 @@ main {
 #left div {
     margin-bottom: 0.5rem;
 }
+#projects {
+    display: grid;
+    grid-template-rows: repeat(auto, clamp(20px, 1.1rem, 50px));
+    gap: 0;
+}
 #projects p{
+    background-color: aqua;
     margin: 0.5rem 0;
 }
 
 /* to-do list styling */
 
 #list {
-    grid-column: 2 / span 3;
+    /* grid-column: 2 / span 3; */
+    width: 75%;
 }
 
 #list-title {
@@ -74,6 +91,33 @@ main {
 .task:last-of-type {
     border-bottom: 1px solid grey;
     color: gray;
+}
+.task:last-of-type input, input:focus {
+    border: none;
+    outline: none;
+}
+
+.title {
+    display: flex;
+}
+.title-main{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.title h3 {
+    margin-left: 1rem;
+}
+.title p {
+    justify-content: end;
+}
+.info {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.due {
+    margin-left: 2rem;
 }
 
 
