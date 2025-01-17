@@ -1,16 +1,22 @@
 import "./style.css";
-import ToDo from "./manageTasks";
+import Task from "./manageTasks";
 import { showDetails } from "./manageTasks";
 
 /* 
 * Things to do:
-Show description when hovering
-Be able to modify tasks
 add a task
+Be able to modify tasks
 add a project
 modify projects
 select another project
+Show description when hovering
 */
+
+const input = document.getElementById("add-task");
+
+input.addEventListener("input", () => {
+    console.log(input.value);
+})
 
 // show and hide description of task 1
 const task1 = document.querySelector("#task1");
@@ -37,3 +43,7 @@ task2.addEventListener("mouseout", () => {
 });
 
 const list = document.querySelector("#list");
+list.addEventListener("mouseover", (e) => {
+    const targeting = e.target;
+    
+});

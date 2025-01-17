@@ -1,4 +1,4 @@
-export default class ToDo {
+class ToDo {
     constructor(name, description){
         this.name = name;
         this.description = description;
@@ -17,7 +17,7 @@ export default class ToDo {
     }
 }
 
-class Task extends ToDo{
+export default class Task extends ToDo{
     constructor(name, description, date){
         super(name, description);
         this.date = date;
