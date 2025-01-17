@@ -112,7 +112,7 @@ main {
     width: 75%;
 }
 
-#list-title {
+#list h2:first-child {
     margin-bottom: 1rem;
 }
 
