@@ -12,11 +12,9 @@ select another project
 Show description when hovering
 */
 
-const input = document.getElementById("add-task");
+const input = document.getElementById("add");
 
-input.addEventListener("input", () => {
-    console.log(input.value);
-})
+
 
 // show and hide description of task 1
 const task1 = document.querySelector("#task1");
@@ -42,8 +40,5 @@ task2.addEventListener("mouseout", () => {
     description.style.display = "none";
 });
 
-const list = document.querySelector("#list");
-list.addEventListener("mouseover", (e) => {
-    const targeting = e.target;
-    
-});
+
+

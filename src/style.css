@@ -44,28 +44,13 @@ main {
 }
 
 /* left sections */
-#profile {
-    display: flex;
-    align-items: center;
-}
 #projects {
     width: 100%;
     height: 80%;
 }
-#profile, #add-project {
+#add-project {
     width: 100%;
-    height: 10%;
-}
-#pfp img {
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-}
-
-#user {
-    display: flex;
-    align-items: center;
-    padding-left: 0.5rem;
+    height: 20%;
 }
 #left div {
     margin-bottom: 0.5rem;
@@ -89,20 +74,24 @@ main {
     align-items: center;
     justify-content: center;
 }
-#add-project-input{
+#add-project-input, #add-task-input{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     border: none;
-    background-color: white;
-    color: #00FF7F;
     font-size: 1.3rem;
     text-align: center;
     display: inline-block;
 }
-#add-project-input:hover{
+#add-project-input, #add-task-input:hover{
+    background-color: white;
+    color: #00FF7F;
+}
+#add-project-input:hover, #add-task-input{
     background-color: seagreen;
     color: white;
+}
+#add-project-input:hover, #add-task-input:hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19); 
 }
 
@@ -121,19 +110,6 @@ main {
     border-top: 1px solid grey;
     padding: 0.5rem 0;
 }
-.task:last-of-type {
-    border-bottom: 1px solid grey;
-    color: gray;
-}
-.task:last-of-type input, input:focus {
-    border: none;
-    outline: none;
-    width: 70%;
-    height: 100%;
-    font-size: 1.1rem;
-    font-weight: bold;
-    background-color: transparent;
-}
 .title {
     display: flex;
 }
@@ -142,7 +118,7 @@ main {
     display: flex;
     align-items: center;
 }
-.title h3 {
+.title h3{
     margin-left: 1rem;
 }
 .title p {
@@ -159,4 +135,7 @@ main {
 .description {
     display: none;
 }
-
+#add{
+    display: flex;
+    justify-content: center;
+}
