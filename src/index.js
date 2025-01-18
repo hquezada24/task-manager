@@ -1,4 +1,5 @@
 import "./style.css";
+import { ToDoList } from "./add-remove";
 import Task from "./manageTasks";
 import { showDetails } from "./manageTasks";
 
@@ -12,8 +13,19 @@ select another project
 Show description when hovering
 */
 
-const input = document.getElementById("add");
+// create default project folder
+const Today = new ToDoList();
+console.log(Today);
 
+const input = document.getElementById("add-task-input");
+const dialog = document.getElementById("dialog");
+const submit = document.getElementById("submit");
+
+input.addEventListener("click", () => {
+    dialog.showModal();
+});
+
+//submit.addEventListener("click", );
 
 
 // show and hide description of task 1

@@ -1,3 +1,16 @@
+export class ToDoList {
+    constructor(){
+        this.tasks = [];
+    }
+    get viewList(){
+        return this.tasks;
+    }
+    addTask(task){
+        this.tasks.push(task);
+    }
+}
+
+
 class ToDo {
     constructor(name, description){
         this.name = name;

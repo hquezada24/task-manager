@@ -60,6 +60,28 @@
             <div class="task" id="add">
                 <button id="add-task-input">+</button>
             </div>
+            <dialog id="dialog">
+                <div id="task-div">
+                    <label for="task">Task</label>
+                    <input type="text" id="task">
+                </div>
+                <div id="description-div">
+                    <label for="description">Description</label>
+                    <input type="text" id="description">
+                </div>
+                <div id="urgency-div">
+                    <label for="urgency">Urgency</label>
+                    <select name="" id="urgency">
+                        <option value="">🟢 Low</option>
+                        <option value="">🔥 High</option>
+                    </select>
+                </div>
+                <div id="date-div">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+                <button type="submit" id="submit">Add new task</button>
+            </dialog>
         </div>
     </main>
 </body>
